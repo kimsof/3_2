@@ -76,14 +76,15 @@ int main()
 	std::sort(array.begin(), array.end());
 	}
 
-	/*{
+	{
 		Timer timer_for_deque;
 	std::deque<int> deque;
 	for (int i = 0; i < number; i++) {
-		deque[i] = vector[i];
+		//deque[i] = vector[i];
+		deque.push_back(vector[i]);
 	}
 	std::sort(deque.begin(), deque.end());
-	}*/
+	}
 
 	{
 		Timer timer_for_list;
